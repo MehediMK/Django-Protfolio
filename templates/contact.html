@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+<!-- start title -->
+{% block title %}
+      Contact
+{% endblock %}
+<!-- end title block -->
+
+
+{% block contant %}
+<div class="container">
+  <div class="mt-5">
+    
+    <form action="" method="post" class="form-group mr-auto ml-auto col-md-6">
+      {% csrf_token %}
+      <h3 class="text-center">Contact Page</h3><hr>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name"><br>
+      <input type="email" name="email" id="emal" class="form-control" placeholder="Enter your email" ><br>
+      <textarea name="comments" id="comments" class="form-control" cols="30" rows="10" placeholder="Enter your query here..."></textarea><br>
+      <input type="submit" class="btn btn-info form-control" value="Submit">
+    </form>
+  </div>
+</div>
+{% endblock %}
